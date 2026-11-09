@@ -245,6 +245,34 @@ footer {
 
 footer p { margin: 0 0 6px; }
 
+/* ---------- JavaScript features ---------- */
+#form-status {
+    color: var(--accent);
+    min-height: 1.5em;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 16px;
+    background: var(--accent);
+    color: var(--bg);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 999px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.back-to-top:hover { text-decoration: none; filter: brightness(1.1); }
+
+.back-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* ---------- Small screens ---------- */
 @media (max-width: 600px) {
     h1 { font-size: 2.1rem; }

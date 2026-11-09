@@ -93,15 +93,16 @@
                 <a href="https://github.com/yaelcodess" target="_blank" rel="noopener noreferrer">github.com/yaelcodess</a>
             </p>
 
-            <form>
+            <form id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message"></textarea>
 
-                <button type="button">Send Message</button>
+                <button type="button" id="send-btn">Send Message</button>
             </form>
+            <p id="form-status"></p>
             <p>Note: This form is a visual prototype only.</p>
         </section>
     </main>
@@ -110,5 +111,8 @@
         <p>&copy; 2026 Ares Yael A. Garcia. All rights reserved.</p>
         <p>Thank you for visiting my portfolio!</p>
     </footer>
+
+    <a href="#home" id="back-to-top" class="back-to-top">&uarr; Top</a>
+    <script src="script.js"></script>
 </body>
 </html>
