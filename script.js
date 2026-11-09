@@ -1,3 +1,21 @@
+document.documentElement.classList.add("js");
+
+
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+sections.forEach(function (section) {
+    observer.observe(section);
+});
+
 const sendButton = document.getElementById("send-btn");
 const nameInput = document.getElementById("name");
 const messageInput = document.getElementById("message");
