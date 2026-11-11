@@ -1,23 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="Developer portfolio of Ares Yael A. Garcia, a BSIT student interested in full-stack web development and AI engineering.">
+
     <title>Ares Yael A. Garcia | Developer Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- HEADER -->
     <header id="home">
+
         <h1>Ares Yael A. Garcia</h1>
+
         <h2>BSIT Student Developer Portfolio</h2>
-        <p>Hi! I'm Ares, an aspiring full-stack web developer and AI engineer.</p>
+
+        <p>
+            Hi! I'm Ares, an aspiring full-stack web developer
+            and AI engineer.
+        </p>
 
         <div class="hero-actions">
             <a class="btn" href="#projects">View Projects</a>
             <a class="btn btn-outline" href="#contact">Contact Me</a>
         </div>
 
+        <!-- NAVIGATION -->
         <nav aria-label="Main navigation">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -26,99 +41,371 @@
             <a href="#goals">Goals</a>
             <a href="#contact">Contact</a>
         </nav>
+
     </header>
 
+
+    <!-- MAIN CONTENT -->
     <main>
+
+        <!-- ABOUT ME -->
         <section id="about">
+
             <h2>About Me</h2>
-            <img src="profile.jpg" alt="Portrait photo of Ares Yael A. Garcia" width="150">
-            <p>I am a second-year Bachelor of Science in Information Technology student at National University Fairview. I am interested in full-stack web development and artificial intelligence engineering. I have experience with Python, Java, C++, and HTML, and I understand basic database concepts. Outside of coding, I enjoy badminton and jogging.</p>
+
+            <img
+                src="profile.jpg"
+                alt="Portrait photo of Ares Yael A. Garcia"
+                width="150"
+            >
+
+            <p>
+                I am a second-year Bachelor of Science in
+                Information Technology student at National
+                University Fairview. I am interested in
+                full-stack web development and artificial
+                intelligence engineering. I have experience
+                with Python, Java, C++, and HTML, and I
+                understand basic database concepts. Outside
+                of coding, I enjoy badminton and jogging.
+            </p>
+
         </section>
 
+
+        <!-- TECHNICAL SKILLS -->
         <section id="skills">
+
             <h2>My Technical Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>C++</li>
-                <li>Basic Database Concepts</li>
-            </ul>
+
+            <div class="skill-category">
+
+                <h3>Web Development & Design</h3>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Figma</li>
+                </ul>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>Programming Languages</h3>
+
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                </ul>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>Frameworks and Tools</h3>
+
+                <ul>
+                    <li>Streamlit</li>
+                </ul>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>Database Management</h3>
+
+                <ul>
+                    <li>Basic Database Concepts</li>
+                    <li>Microsoft SQL Server</li>
+                </ul>
+
+            </div>
+
         </section>
 
+
+        <!-- EDUCATIONAL BACKGROUND -->
         <section id="education">
+
             <h2>Educational Background</h2>
-            <table border="1">
-                <tr><th>Category</th><th>Details</th></tr>
-                <tr><td>School</td><td>National University Fairview</td></tr>
-                <tr><td>Program</td><td>Bachelor of Science in Information Technology (BSIT)</td></tr>
-                <tr><td>Year Level</td><td>2nd Year</td></tr>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">Details</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>School</td>
+                        <td>National University Fairview</td>
+                    </tr>
+
+                    <tr>
+                        <td>Program</td>
+                        <td>
+                            Bachelor of Science in Information
+                            Technology (BSIT)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Year Level</td>
+                        <td>2nd Year</td>
+                    </tr>
+                </tbody>
+
             </table>
+
         </section>
 
+
+        <!-- PROJECTS -->
         <section id="projects">
+
             <h2>My Projects</h2>
-            <p>Note: The first three projects below are completed class projects. The fourth is a project I am currently working on.</p>
 
+            <p>
+                Here are some of the academic and personal
+                projects I have worked on, showcasing my
+                experience in programming, web development,
+                and artificial intelligence.
+            </p>
+
+
+            <!-- PROJECT 1 -->
             <article>
-                <h3>Project 1: Concert Ticketing System <span class="badge">Completed</span></h3>
-                <p>A team project in which we worked on a ticketing system for a concert.</p>
+
+                <h3>
+                    Project 1: Concert Ticketing System
+                    <span class="badge">Completed</span>
+                </h3>
+
+                <p>
+                    A team-developed concert ticketing system
+                    designed to manage the ticketing process
+                    and organize system operations.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    HTML, CSS, JavaScript, and Streamlit
+                </p>
+
+                <p>
+                    <strong>My Contribution:</strong>
+                    Contributed to the system's decision-making
+                    logic, particularly the processing and
+                    handling of entries within the system.
+                </p>
+
             </article>
 
+
+            <!-- PROJECT 2 -->
             <article>
-                <h3>Project 2: PULSERA VITA Smartwatch Promotion <span class="badge">Completed</span></h3>
-                <p>A project with Kenneth in which we promoted a product called PULSERA VITA, a lightweight smartwatch that monitors your heart rate, sleep, and daily activity in real time.</p>
+
+                <h3>
+                    Project 2: PULSERA VITA Smartwatch Promotion
+                    <span class="badge">Completed</span>
+                </h3>
+
+                <p>
+                    A collaborative product promotion project
+                    with Kenneth featuring PULSERA VITA, a
+                    lightweight smartwatch designed to monitor
+                    heart rate, sleep, and daily physical activity.
+                </p>
+
+                <p>
+                    <strong>Project Type:</strong>
+                    Product Promotion
+                </p>
+
             </article>
 
+
+            <!-- PROJECT 3 -->
             <article>
-                <h3>Project 3: Java GUI Parking Slot <span class="badge">Completed</span></h3>
-                <p>A simple Java program with a graphical user interface (GUI) for managing parking slots, built with very basic functions.</p>
+
+                <h3>
+                    Project 3: Java GUI Parking Slot
+                    <span class="badge">Completed</span>
+                </h3>
+
+                <p>
+                    A basic Java application with a graphical
+                    user interface designed to manage parking
+                    slots through simple system functions.
+                </p>
+
+                <p>
+                    <strong>Technology:</strong> Java
+                </p>
+
             </article>
 
+
+            <!-- PROJECT 4 -->
             <article>
-                <h3>Project 4: Taglish Router <span class="badge badge-progress">In Progress</span></h3>
-                <p>An AI-powered routing system that investigates how code-switching between Tagalog and English affects language model performance.</p>
+
+                <h3>
+                    Project 4: Taglish Router
+                    <span class="badge badge-progress">In Progress</span>
+                </h3>
+
+                <p>
+                    An AI-powered web application exploring how
+                    code-switching between Tagalog and English
+                    affects language model performance. The
+                    project focuses on language processing and
+                    intelligent routing between different
+                    language inputs.
+                </p>
+
+                <p>
+                    <strong>Project Type:</strong>
+                    AI and Web Development
+                </p>
+
             </article>
+
         </section>
 
+
+        <!-- CAREER GOALS -->
         <section id="goals">
+
             <h2>My Career Goals</h2>
+
             <ol>
-                <li>Become a full-stack web developer.</li>
-                <li>Learn the fundamentals of artificial intelligence engineering.</li>
-                <li>Build and publish real projects on GitHub.</li>
+
+                <li>
+                    Become a full-stack web developer.
+                </li>
+
+                <li>
+                    Learn the fundamentals of artificial
+                    intelligence engineering.
+                </li>
+
+                <li>
+                    Build and publish real projects on GitHub.
+                </li>
+
             </ol>
+
         </section>
 
+
+        <!-- CONTACT -->
         <section id="contact">
+
             <h2>Contact Me</h2>
-            <p>Email:
-                <a href="mailto:kingaresyael19@gmail.com">kingaresyael19@gmail.com</a>
-            </p>
-            <p>GitHub:
-                <a href="https://github.com/yaelcodess" target="_blank" rel="noopener noreferrer">github.com/yaelcodess</a>
+
+            <p>
+                Email:
+                <a href="mailto:kingaresyael19@gmail.com">
+                    kingaresyael19@gmail.com
+                </a>
             </p>
 
+            <p>
+                GitHub:
+                <a
+                    href="https://github.com/yaelcodess"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    github.com/yaelcodess
+                </a>
+            </p>
+
+
+            <!-- CONTACT FORM -->
             <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+
+                <label for="name">Full Name:</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email Address:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
 
-                <button type="button" id="send-btn">Send Message</button>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
+
+                <button type="button" id="send-btn">
+                    Send Message
+                </button>
+
             </form>
-            <p id="form-status"></p>
-            <p>Note: This form is a visual prototype only.</p>
+
+            <p id="form-status" aria-live="polite"></p>
+
+            <p>
+                Note: This form is a visual prototype only.
+            </p>
+
         </section>
+
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Ares Yael A. Garcia. All rights reserved.</p>
-        <p>Thank you for visiting my portfolio!</p>
+
+        <p>
+            &copy; 2026 Ares Yael A. Garcia.
+            All rights reserved.
+        </p>
+
+        <p>
+            Thank you for visiting my portfolio!
+        </p>
+
     </footer>
 
-    <a href="#home" id="back-to-top" class="back-to-top">&uarr; Top</a>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a
+        href="#home"
+        id="back-to-top"
+        class="back-to-top"
+        aria-label="Back to top"
+    >
+        &uarr; Top
+    </a>
+
+
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
+
 </body>
+
 </html>
