@@ -1,375 +1,654 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ares Yael Garcia's personal developer portfolio, featuring projects, technical skills, education, and career goals.">
+    <meta name="theme-color" content="#080d18">
 
-    <meta name="description" content="Developer portfolio of Ares Yael A. Garcia, a BSIT student interested in full-stack web development and AI engineering.">
+    <title>Ares Yael Garcia | Developer Portfolio</title>
 
-    <title>Ares Yael A. Garcia | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header id="home">
+    <!-- NAVIGATION -->
 
-        <h1>Ares Yael A. Garcia</h1>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-container">
 
-        <h2>BSIT Student Developer Portfolio</h2>
+            <a href="#home" class="brand" aria-label="Ares Garcia home">
+                AG<span>.</span>
+            </a>
 
-        <p>
-            Hi! I'm Ares, an aspiring full-stack web developer
-            and AI engineer.
-        </p>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#goals">Goals</a>
+            </div>
 
-        <div class="hero-actions">
-            <a class="btn" href="#projects">View Projects</a>
-            <a class="btn btn-outline" href="#contact">Contact Me</a>
+            <a href="#contact" class="nav-contact">
+                Let's Talk <span>↗</span>
+            </a>
+
         </div>
-
-        <!-- NAVIGATION -->
-        <nav aria-label="Main navigation">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#goals">Goals</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-    </header>
+    </nav>
 
 
-    <!-- MAIN CONTENT -->
     <main>
 
-        <!-- ABOUT ME -->
-        <section id="about">
+        <!-- HERO SECTION -->
 
-            <h2>About Me</h2>
+        <section class="hero" id="home">
 
-            <img
-                src="profile.jpg"
-                alt="Portrait photo of Ares Yael A. Garcia"
-                width="150"
-            >
+            <div class="hero-content">
 
-            <p>
-                I am a second-year Bachelor of Science in
-                Information Technology student at National
-                University Fairview. I am interested in
-                full-stack web development and artificial
-                intelligence engineering. I have experience
-                with Python, Java, C++, and HTML, and I
-                understand basic database concepts.
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    SECOND-YEAR BSIT STUDENT
+                </p>
+
+                <h1>
+                    Building ideas<br>
+                    into <span>digital</span><br>
+                    experiences.
+                </h1>
+
+                <p class="hero-description">
+                    Hi, I'm Ares Yael Garcia. I'm an aspiring full-stack
+                    developer and AI engineer interested in creating
+                    meaningful applications through technology.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="button button-primary">
+                        Explore my work <span>↗</span>
+                    </a>
+
+                    <a href="#about" class="button button-secondary">
+                        More about me
+                    </a>
+                </div>
+
+                <div class="hero-meta">
+                    <span>BASED IN THE PHILIPPINES</span>
+                    <span>INTERESTED IN WEB DEVELOPMENT & AI</span>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="hero-image-frame">
+                    <img
+                        src="profile.jpg"
+                        alt="Portrait of Ares Yael Garcia, an aspiring software developer"
+                    >
+                </div>
+
+                <div class="image-caption">
+                    <span>01 / INTRODUCTION</span>
+                    <span>AG. © 2026</span>
+                </div>
+
+                <div class="hero-decoration">DEVELOPER<br>IN PROGRESS.</div>
+
+            </div>
+
+            <div class="hero-index">
+                <span>PORTFOLIO</span>
+                <span>2026 — PRESENT</span>
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+
+        <section class="about section-block" id="about">
+
+            <div class="section-heading">
+                <p class="eyebrow">01 / ABOUT</p>
+                <h2>A little about<br>who I am.</h2>
+            </div>
+
+            <div class="about-content">
+
+                <p class="about-lead">
+                    I'm an Information Technology student who enjoys
+                    exploring how technology can solve everyday problems.
+                </p>
+
+                <p>
+                    Currently pursuing a Bachelor of Science in Information
+                    Technology at National University Fairview, I'm developing
+                    my knowledge of programming, web development, databases,
+                    and software design.
+                </p>
+
+                <p>
+                    I'm particularly interested in full-stack development
+                    and artificial intelligence. I enjoy learning by building
+                    projects, experimenting with new tools, and collaborating
+                    with other people.
+                </p>
+
+                <div class="personal-interests">
+                    <span>OUTSIDE THE SCREEN</span>
+                    <div>
+                        <span>Badminton</span>
+                        <span>Jogging</span>
+                        <span>Music</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS SECTION -->
+
+        <section class="skills section-block" id="skills">
+
+            <div class="section-heading">
+                <p class="eyebrow">02 / TOOLKIT</p>
+                <h2>Technologies I<br>work with.</h2>
+            </div>
+
+            <p class="section-intro">
+                A growing collection of tools and technologies I've
+                encountered through coursework, practice, and projects.
+            </p>
+
+            <div class="skills-grid">
+
+                <!-- WEB DEVELOPMENT -->
+
+                <div class="skill-card">
+                    <div class="skill-card-heading">
+                        <span class="skill-number">01</span>
+                        <h3>Web Development & Design</h3>
+                    </div>
+
+                    <ul class="technology-list">
+
+                        <li>
+                            <img src="https://cdn.simpleicons.org/html5/E34F26"
+                                 alt="HTML5 logo">
+                            <span>HTML5</span>
+                        </li>
+
+                        <li>
+                            <img src="https://cdn.simpleicons.org/css3/1572B6"
+                                 alt="CSS3 logo">
+                            <span>CSS3</span>
+                        </li>
+
+                        <li>
+                            <img src="https://cdn.simpleicons.org/javascript/F7DF1E"
+                                 alt="JavaScript logo">
+                            <span>JavaScript</span>
+                        </li>
+
+                        <li>
+                            <img src="https://cdn.simpleicons.org/figma/F24E1E"
+                                 alt="Figma logo">
+                            <span>Figma</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!-- PROGRAMMING LANGUAGES -->
+
+                <div class="skill-card">
+                    <div class="skill-card-heading">
+                        <span class="skill-number">02</span>
+                        <h3>Programming Languages</h3>
+                    </div>
+
+                    <ul class="technology-list">
+
+                        <li>
+                            <img src="https://cdn.simpleicons.org/python/3776AB"
+                                 alt="Python logo">
+                            <span>Python</span>
+                        </li>
+
+                        <li>
+                            <img src="https://cdn.simpleicons.org/openjdk/ED8B00"
+                                 alt="Java logo">
+                            <span>Java</span>
+                        </li>
+
+                        <li>
+                            <img src="https://cdn.simpleicons.org/cplusplus/00599C"
+                                 alt="C++ logo">
+                            <span>C++</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!-- FRAMEWORKS AND TOOLS -->
+
+                <div class="skill-card">
+                    <div class="skill-card-heading">
+                        <span class="skill-number">03</span>
+                        <h3>Frameworks & Tools</h3>
+                    </div>
+
+                    <ul class="technology-list">
+
+                        <li>
+                            <img src="https://cdn.simpleicons.org/streamlit/FF4B4B"
+                                 alt="Streamlit logo">
+                            <span>Streamlit</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!-- DATABASE MANAGEMENT -->
+
+                <div class="skill-card">
+                    <div class="skill-card-heading">
+                        <span class="skill-number">04</span>
+                        <h3>Database Management</h3>
+                    </div>
+
+                    <ul class="technology-list">
+
+                        <li>
+                            <img src="https://cdn.simpleicons.org/microsoftsqlserver/CC2927"
+                                 alt="Microsoft SQL Server logo">
+                            <span>Microsoft SQL Server</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <p class="skills-note">
+                These technologies represent my current learning experience,
+                not necessarily professional-level proficiency.
             </p>
 
         </section>
 
 
-        <!-- TECHNICAL SKILLS -->
-        <section id="skills">
+        <!-- EDUCATION SECTION -->
 
-            <h2>My Technical Skills</h2>
+        <section class="education section-block" id="education">
 
-            <div class="skill-category">
-
-                <h3>Web Development & Design</h3>
-
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Figma</li>
-                </ul>
-
+            <div class="section-heading">
+                <p class="eyebrow">03 / EDUCATION</p>
+                <h2>Where I'm<br>learning.</h2>
             </div>
 
-            <div class="skill-category">
+            <div class="education-content">
 
-                <h3>Programming Languages</h3>
+                <p class="section-intro">
+                    My academic journey and current area of study.
+                </p>
 
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C++</li>
-                </ul>
+                <div class="education-table-wrapper">
 
-            </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Institution</th>
+                                <th>Program</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
 
-            <div class="skill-category">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>National University</strong>
+                                    <span>Fairview Campus</span>
+                                </td>
 
-                <h3>Frameworks and Tools</h3>
+                                <td>
+                                    Bachelor of Science in
+                                    Information Technology
+                                </td>
 
-                <ul>
-                    <li>Streamlit</li>
-                </ul>
+                                <td>
+                                    <span class="education-status">
+                                        2nd Year
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-            </div>
+                </div>
 
-            <div class="skill-category">
-
-                <h3>Database Management</h3>
-
-                <ul>
-                    <li>Basic Database Concepts</li>
-                    <li>Microsoft SQL Server</li>
-                </ul>
+                <p class="education-note">
+                    Building a foundation in computing, programming,
+                    information systems, and software development.
+                </p>
 
             </div>
 
         </section>
 
 
-        <!-- EDUCATIONAL BACKGROUND -->
-        <section id="education">
+        <!-- PROJECTS SECTION -->
 
-            <h2>Educational Background</h2>
+        <section class="projects section-block" id="projects">
 
-            <table>
+            <div class="section-heading">
+                <p class="eyebrow">04 / SELECTED WORK</p>
+                <h2>Things I've<br>worked on.</h2>
+            </div>
 
-                <thead>
-                    <tr>
-                        <th scope="col">Category</th>
-                        <th scope="col">Details</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>School</td>
-                        <td>National University Fairview</td>
-                    </tr>
-
-                    <tr>
-                        <td>Program</td>
-                        <td>
-                            Bachelor of Science in Information
-                            Technology (BSIT)
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Year Level</td>
-                        <td>2nd Year</td>
-                    </tr>
-                </tbody>
-
-            </table>
-
-        </section>
-
-
-        <!-- PROJECTS -->
-        <section id="projects">
-
-            <h2>My Projects</h2>
-
-            <p>
-                Here are some of the academic and personal
-                projects I have worked on, showcasing my
-                experience in programming, web development,
-                and artificial intelligence.
+            <p class="section-intro">
+                Academic collaborations and personal experiments that
+                reflect my progress as an aspiring developer.
             </p>
 
 
-            <!-- PROJECT 1 -->
-            <article>
+            <!-- FEATURED PROJECT -->
 
-                <h3>
-                    Project 1: Concert Ticketing System
-                    <span class="badge">Completed</span>
-                </h3>
+            <article class="project-card project-featured">
 
-                <p>
-                    A team-developed concert ticketing system
-                    designed to manage the ticketing process
-                    and organize system operations.
-                </p>
+                <div class="project-topline">
+                    <span>01 / TEAM PROJECT</span>
+                    <span class="project-type">SYSTEM DEVELOPMENT</span>
+                </div>
 
-                <p>
-                    <strong>Technologies:</strong>
-                    HTML, CSS, JavaScript, and Streamlit
-                </p>
+                <div class="project-featured-content">
 
-                <p>
-                    <strong>My Contribution:</strong>
-                    Contributed to the system's decision-making
-                    logic, particularly the processing and
-                    handling of entries within the system.
-                </p>
+                    <div>
+                        <h3>Concert Ticketing System</h3>
 
-            </article>
+                        <p>
+                            A team-developed ticketing system designed
+                            to organize ticketing processes and manage
+                            system operations.
+                        </p>
 
+                        <p>
+                            My contribution focused on the system's
+                            decision-making logic and the processing
+                            of user entries.
+                        </p>
 
-            <!-- PROJECT 2 -->
-            <article>
+                        <div class="project-technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Streamlit</span>
+                        </div>
+                    </div>
 
-                <h3>
-                    Project 2: PULSERA VITA Smartwatch Promotion
-                    <span class="badge">Completed</span>
-                </h3>
+                    <div class="project-symbol">
+                        <span>CTS</span>
+                        <span>↗</span>
+                    </div>
 
-                <p>
-                    A collaborative product promotion project
-                    with Kenneth featuring PULSERA VITA, a
-                    lightweight smartwatch designed to monitor
-                    heart rate, sleep, and daily physical activity.
-                </p>
-
-                <p>
-                    <strong>Project Type:</strong>
-                    Product Promotion
-                </p>
+                </div>
 
             </article>
 
 
-            <!-- PROJECT 3 -->
-            <article>
+            <!-- OTHER PROJECTS -->
 
-                <h3>
-                    Project 3: Java GUI Parking Slot
-                    <span class="badge">Completed</span>
-                </h3>
+            <div class="project-grid">
 
-                <p>
-                    A basic Java application with a graphical
-                    user interface designed to manage parking
-                    slots through simple system functions.
-                </p>
+                <article class="project-card">
 
-                <p>
-                    <strong>Technology:</strong> Java
-                </p>
+                    <div class="project-topline">
+                        <span>02 / COLLABORATION</span>
+                        <span>PRODUCT PROMOTION</span>
+                    </div>
 
-            </article>
+                    <div class="project-symbol small-symbol">
+                        PV
+                    </div>
+
+                    <h3>PULSERA VITA Smartwatch Promotion</h3>
+
+                    <p>
+                        A collaborative product promotion project
+                        featuring a smartwatch concept focused on
+                        monitoring heart rate, sleep, and daily activity.
+                    </p>
+
+                    <div class="project-technologies">
+                        <span>Product Concept</span>
+                        <span>Design</span>
+                    </div>
+
+                </article>
 
 
-            <!-- PROJECT 4 -->
-            <article>
+                <article class="project-card">
 
-                <h3>
-                    Project 4: Taglish Router
-                    <span class="badge badge-progress">In Progress</span>
-                </h3>
+                    <div class="project-topline">
+                        <span>03 / ACADEMIC PROJECT</span>
+                        <span>JAVA APPLICATION</span>
+                    </div>
 
-                <p>
-                    An AI-powered web application exploring how
-                    code-switching between Tagalog and English
-                    affects language model performance. The
-                    project focuses on language processing and
-                    intelligent routing between different
-                    language inputs.
-                </p>
+                    <div class="project-symbol small-symbol">
+                        P
+                    </div>
 
-                <p>
-                    <strong>Project Type:</strong>
-                    AI and Web Development
-                </p>
+                    <h3>Java GUI Parking Slot</h3>
 
-            </article>
+                    <p>
+                        A basic Java application with a graphical
+                        user interface designed to manage parking slots.
+                    </p>
+
+                    <div class="project-technologies">
+                        <span>Java</span>
+                        <span>GUI</span>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card project-wide">
+
+                    <div class="project-topline">
+                        <span>04 / PERSONAL EXPERIMENT</span>
+                        <span class="project-progress">IN PROGRESS</span>
+                    </div>
+
+                    <div class="project-symbol small-symbol">
+                        TR
+                    </div>
+
+                    <h3>Taglish Router</h3>
+
+                    <p>
+                        An AI-powered web application exploring how
+                        Tagalog-English code-switching affects language
+                        model performance. The project focuses on
+                        language processing and intelligent routing.
+                    </p>
+
+                    <div class="project-technologies">
+                        <span>Artificial Intelligence</span>
+                        <span>Language Processing</span>
+                        <span>Web Development</span>
+                    </div>
+
+                </article>
+
+            </div>
 
         </section>
 
 
         <!-- CAREER GOALS -->
-        <section id="goals">
 
-            <h2>My Career Goals</h2>
+        <section class="goals section-block" id="goals">
 
-            <ol>
+            <div class="section-heading">
+                <p class="eyebrow">05 / WHAT'S NEXT</p>
+                <h2>Where I want<br>to go.</h2>
+            </div>
 
-                <li>
-                    Become a full-stack web developer.
-                </li>
+            <div class="goals-content">
 
-                <li>
-                    Learn the fundamentals of artificial
-                    intelligence engineering.
-                </li>
+                <p class="about-lead">
+                    I'm still learning, experimenting, and figuring
+                    out the kind of developer I want to become.
+                </p>
 
-                <li>
-                    Build and publish real projects on GitHub.
-                </li>
+                <ol class="goals-list">
 
-            </ol>
+                    <li>
+                        <span>01</span>
+                        <div>
+                            <h3>Become a Full-Stack Developer</h3>
+                            <p>
+                                Build the skills to develop complete
+                                applications, from user interfaces
+                                to backend systems.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>02</span>
+                        <div>
+                            <h3>Explore Artificial Intelligence</h3>
+                            <p>
+                                Understand how AI and machine learning
+                                systems work and how they can be applied
+                                to practical problems.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>03</span>
+                        <div>
+                            <h3>Build and Deploy Real Projects</h3>
+                            <p>
+                                Turn ideas into useful applications
+                                while continuously improving my
+                                technical and problem-solving skills.
+                            </p>
+                        </div>
+                    </li>
+
+                </ol>
+
+            </div>
 
         </section>
 
 
-        <!-- CONTACT -->
-        <section id="contact">
+        <!-- CONTACT SECTION -->
 
-            <h2>Contact Me</h2>
+        <section class="contact section-block" id="contact">
 
-            <p>
-                Email:
-                <a href="mailto:kingaresyael19@gmail.com">
-                    kingaresyael19@gmail.com
-                </a>
-            </p>
+            <div class="contact-intro">
 
-            <p>
-                GitHub:
-                <a
-                    href="https://github.com/yaelcodess"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    github.com/yaelcodess
-                </a>
-            </p>
+                <p class="eyebrow">06 / GET IN TOUCH</p>
+
+                <h2>
+                    Have an idea?<br>
+                    Let's <span>connect.</span>
+                </h2>
+
+                <p>
+                    I'm always interested in learning, sharing ideas,
+                    and collaborating on meaningful projects.
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="mailto:kingaresyael19@gmail.com">
+                        <span>EMAIL</span>
+                        kingaresyael19@gmail.com ↗
+                    </a>
+
+                    <a href="https://github.com/yaelcodess"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <span>GITHUB</span>
+                        github.com/yaelcodess ↗
+                    </a>
+
+                </div>
+
+            </div>
 
 
-            <!-- CONTACT FORM -->
-            <form id="contact-form">
+            <div class="contact-form-area">
 
-                <label for="name">Full Name:</label>
+                <form id="contact-form">
 
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your name"
-                    required
-                >
+                    <div class="form-heading">
+                        <span>DROP A MESSAGE</span>
+                        <span>01 — 03</span>
+                    </div>
 
-                <label for="email">Email Address:</label>
+                    <label for="name">Your name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                        required
+                    >
 
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    required
-                >
+                    <label for="email">Email address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
 
-                <label for="message">Message:</label>
+                    <label for="message">Your message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Write something..."
+                        rows="5"
+                        required
+                    ></textarea>
 
-                <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Write your message here..."
-                    required
-                ></textarea>
+                    <button type="button" id="send-btn">
+                        Send Message <span>↗</span>
+                    </button>
 
-                <button type="button" id="send-btn">
-                    Send Message
-                </button>
+                    <p id="form-status" aria-live="polite"></p>
 
-            </form>
+                </form>
 
-            <p id="form-status" aria-live="polite"></p>
+                <p class="form-note">
+                    This is a portfolio demonstration form.
+                    Messages are not actually transmitted.
+                </p>
 
-            <p>
-                Note: This form is a visual prototype only.
-            </p>
+            </div>
 
         </section>
 
@@ -377,34 +656,22 @@
 
 
     <!-- FOOTER -->
-    <footer>
 
-        <p>
-            &copy; 2026 Ares Yael A. Garcia.
-            All rights reserved.
+    <footer class="footer">
+
+        <a href="#home" class="footer-brand">AG<span>.</span></a>
+
+        <p>Designed and developed by Ares Yael Garcia.</p>
+
+        <p class="footer-copy">
+            © 2026 ALL RIGHTS RESERVED.
         </p>
 
-        <p>
-            Thank you for visiting my portfolio!
-        </p>
+        <a href="#home" class="back-to-top" id="back-to-top">
+            BACK TO TOP ↑
+        </a>
 
     </footer>
 
-
-    <!-- BACK TO TOP BUTTON -->
-    <a
-        href="#home"
-        id="back-to-top"
-        class="back-to-top"
-        aria-label="Back to top"
-    >
-        &uarr; Top
-    </a>
-
-
-    <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
-
 </body>
-
 </html>
